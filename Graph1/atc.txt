@@ -1,0 +1,150 @@
+ATC 104 -> 1st Floor Hallway
+ATC 263 -> Trio
+Vending -> Catwalk
+1st Floor Hallway -> ATC 105
+Old Elevator -> Old ATC lobby
+Faculty Bathroom 2 -> Main Office
+Maintenance -> Helipad
+3rd Floor Office Lobby -> Ken's Office
+South Stairwell -> 1st Floor Hallway
+2nd Floor Hallway -> ATC 208
+ATC 308 -> 3rd Floor Hallway
+Trio -> ATC 263
+3rd Floor Office Lobby -> Server Room
+Trio -> Stairs1
+ATC 203 -> 2nd Floor Hallway
+ATC 204 -> 2nd Floor Hallway
+3rd Floor Hallway -> South Stairwell
+3rd Floor Office Lobby -> Eli's Office
+3rd Floor Hallway -> 3rd Floor Lobby
+ATC 103 -> 1st Floor Hallway
+ATC 201 -> closet
+2nd Floor lobby -> Elevator
+ATC 109 -> ATC 108
+1st Floor Hallway -> ATC 110
+Elevator -> 3rd Floor Lobby
+Ted's Office -> 3rd Floor Office Lobby
+2nd Floor Hallway -> ATC 203
+closet -> ATC 201
+ATC 208 -> 2nd Floor Hallway
+Stairs2 -> Old ATC lobby
+ATC 160 -> Old ATC lobby
+Stairs2 -> Trio
+ATC 203 -> closet
+3rd Floor Office Lobby -> 3rd Floor Lobby
+Trio -> Catwalk
+Elevator -> 1st Floor lobby
+2nd Floor Hallway -> 2nd Floor lobby
+ATC 201 -> 2nd Floor Hallway
+2nd Floor Hallway -> Maintenance
+2nd Floor Hallway -> ATC 211
+Catwalk -> Trio
+3rd Floor Office Lobby -> Back Stairwell
+ATC 302 -> ATC 303
+1st Floor Hallway -> 1st Floor lobby
+1st Floor lobby -> Outside
+Outside -> Ohio River
+ATC 105 -> 1st Floor Hallway
+Trio -> Stairs2
+3rd Floor Hallway -> ATC 303
+2nd Floor Hallway -> ATC 204
+Catwalk -> 2nd Floor lobby
+Catwalk -> Vending
+ATC 302 -> ATC 301
+ATC 110 -> ATC 109
+1st Floor lobby -> Old ATC lobby
+South Stairwell -> 3rd Floor Hallway
+ATC 104 -> ATC 103
+Faculty Bathroom -> 3rd Floor Office Lobby
+Back Stairwell -> Main Office
+Helipad -> Maintenance
+Old ATC lobby -> 1st Floor lobby
+1st Floor Hallway -> ATC 109
+3rd Floor Lobby -> Elevator
+Old Elevator -> Trio
+Server Room -> 3rd Floor Office Lobby
+Bathroom 3 -> 3rd Floor Hallway
+3rd Floor Office Lobby -> Adam's Office
+1st Floor lobby -> Bathroom 1
+Carl's Office -> 3rd Floor Office Lobby
+Stairs1 -> Trio
+Main Office -> 2nd Floor lobby
+ATC 170 -> Secret Bathroom
+Old ATC lobby -> Outside
+1st Floor lobby -> 1st Floor Hallway
+Stairs1 -> Old ATC lobby
+Eli's Office -> 3rd Floor Office Lobby
+ATC 103 -> ATC 104
+3rd Floor Office Lobby -> Ted's Office
+Old ATC lobby -> ATC 160
+3rd Floor Office Lobby -> Carl's Office
+South Stairwell -> Outside
+ATC 109 -> 1st Floor Hallway
+3rd Floor Office Lobby -> Faculty Bathroom
+2nd Floor Hallway -> ATC 205
+ATC 105 -> ATC 104
+2nd Floor lobby -> Main Office
+Back Stairwell -> 3rd Floor Office Lobby
+ATC 170 -> Old ATC lobby
+3rd Floor Office Lobby -> Andrew's Office
+Jim's Office -> 3rd Floor Office Lobby
+Outside -> 1st Floor lobby
+Old ATC lobby -> Old Elevator
+ATC 108 -> ATC 109
+1st Floor lobby -> Elevator
+1st Floor Hallway -> ATC 104
+Planetarium -> 1st Floor lobby
+ATC 104 -> ATC 105
+Old ATC lobby -> Stairs2
+3rd Floor Hallway -> Bathroom 3
+ATC 109 -> ATC 110
+1st Floor Hallway -> South Stairwell
+South Stairwell -> 2nd Floor Hallway
+ATC 205 -> 2nd Floor Hallway
+ATC 301 -> 3rd Floor Hallway
+Back Stairwell -> Outside
+Catwalk -> Bathroom 2
+ATC 303 -> ATC 302
+3rd Floor Hallway -> ATC 301
+ATC 301 -> ATC 302
+ATC 205 -> ATC 204
+Trio -> Old Bathroom
+1st Floor Hallway -> ATC 107
+ATC 211 -> 2nd Floor Hallway
+Outside -> South Stairwell
+ATC 108 -> ATC 107
+Main Office -> Back Stairwell
+2nd Floor Hallway -> ATC 201
+3rd Floor Hallway -> ATC 308
+ATC 203 -> ATC 204
+closet -> ATC 203
+Trio -> Old Elevator
+1st Floor lobby -> Planetarium
+2nd Floor lobby -> Catwalk
+ATC 107 -> 1st Floor Hallway
+Old ATC lobby -> ATC 170
+ATC 303 -> 3rd Floor Hallway
+Andrew's Office -> 3rd Floor Office Lobby
+ATC 107 -> ATC 108
+1st Floor Hallway -> ATC 103
+3rd Floor Office Lobby -> Jim's Office
+2nd Floor lobby -> 2nd Floor Hallway
+Bathroom 2 -> Catwalk
+3rd Floor Lobby -> 3rd Floor Hallway
+Old ATC lobby -> Stairs1
+Maintenance -> 2nd Floor Hallway
+Skip's Office -> 3rd Floor Office Lobby
+Elevator -> 2nd Floor lobby
+ATC 204 -> ATC 203
+Adam's Office -> 3rd Floor Office Lobby
+3rd Floor Lobby -> 3rd Floor Office Lobby
+2nd Floor Hallway -> South Stairwell
+ATC 204 -> ATC 205
+Old Bathroom -> Trio
+Ken's Office -> 3rd Floor Office Lobby
+Main Office -> Faculty Bathroom 2
+Outside -> Old ATC lobby
+ATC 110 -> 1st Floor Hallway
+3rd Floor Office Lobby -> Skip's Office
+Bathroom 1 -> 1st Floor lobby
+Secret Bathroom -> ATC 170
