@@ -6,6 +6,8 @@ import java.io.*;
 public class Graph1 {
     
     public static HashMap<String, ArrayList> amazingGraph = new HashMap<>();
+    public static HashMap<String, Boolean> nodeVisited = new HashMap<>();
+    public static HashMap<String, String> nodeParent = new HashMap<>();
     
     public static boolean intermediateHop(String start, String end){
         for(int i=0;i<amazingGraph.get(start).size();i++){
@@ -15,6 +17,50 @@ public class Graph1 {
             }
         }
         return false;
+    }
+    
+    public static void bfs(String start, String end){
+        if(!amazingGraph.containsKey(start)) return;
+        ArrayDeque<String> Q = new ArrayDeque();
+        String vertex;
+        Q.push(start);
+        while(!Q.isEmpty()){
+            vertex = Q.pop();
+            if(amazingGraph.get(vertex) == null) amazingGraph.put(vertex, new ArrayList<>());
+            for(Object neighbor : amazingGraph.get(vertex)){
+                String realNeighbor = (String) neighbor;
+                if(nodeVisited.containsKey(realNeighbor) && !nodeVisited.get(realNeighbor)){
+                    nodeVisited.put(vertex, true);
+                    nodeParent.put(realNeighbor, vertex);
+                    Q.add(realNeighbor);
+                }
+            }
+        }
+    }
+    
+    public static void dfs(String start){
+        nodeVisited.put(start, true);
+        if(!amazingGraph.containsKey(start)) return;
+        for(Iterator it = amazingGraph.get(start).iterator(); it.hasNext();) {
+            String neighbor = (String) it.next();
+            if(!nodeVisited.get(neighbor)){
+                nodeParent.put(neighbor, start);
+                dfs(neighbor);
+            }
+        }
+    }
+    
+    public static ArrayList tracePath(String end){
+        ArrayList<String> path = new ArrayList<>();
+        String parent = nodeParent.get(end);
+        if(parent == null) return path;
+        path.add(end);
+        while(parent != null){
+            path.add(parent);
+            parent = nodeParent.get(parent);
+        }
+        Collections.reverse(path);
+        return path;
     }
     
     public static void main(String[] args){
@@ -37,11 +83,16 @@ public class Graph1 {
             String key = line.substring(0,idx).trim();
             String value = line.substring(idx+2).trim();
             ArrayList<String> myList = new ArrayList<>();myList.add(value);
+            
             if(amazingGraph.containsKey(key)){
                 amazingGraph.get(key).add(myList.get(0));
                 myList = amazingGraph.get(key);
             }
             amazingGraph.put(key, myList);
+            nodeVisited.put(key, false);//initialize as not visited
+            nodeVisited.put(value, false);
+            nodeParent.put(key, null);//initalize as having no parent
+            nodeParent.put(value, null);
             T.add(key);
             T.add(value);
         }
@@ -75,19 +126,13 @@ public class Graph1 {
         if( tmp.size() == 0 )
             System.exit(0);
         String end = tmp.get(0);
-        boolean skip = (!amazingGraph.containsKey(start) || amazingGraph.get(start).isEmpty());
-        if(!skip && amazingGraph.get(start).contains(end)){
+        bfs(start, end);
+        nodeParent.put(start, null);
+        ArrayList thePath = tracePath(end);
+        boolean skip = (!amazingGraph.containsKey(start) || amazingGraph.get(start).isEmpty() || thePath.isEmpty());
+        if(!skip){
             JOptionPane.showOptionDialog(null,
-                "Yes, there is a path directly from "+start+" to\n"+end+".",
-                "Message",
-                JOptionPane.DEFAULT_OPTION,
-                JOptionPane.INFORMATION_MESSAGE,
-                null,
-                new String[]{"OK"},
-                null    );
-        }else if(!skip && intermediateHop(start, end)){
-            JOptionPane.showOptionDialog(null,
-                "Yes, there is an intermediate hop from "+start+" to\n"+end+".",
+                "Yes, there is a path between "+start+" to "+end+":\n"+thePath,
                 "Message",
                 JOptionPane.DEFAULT_OPTION,
                 JOptionPane.INFORMATION_MESSAGE,
@@ -95,7 +140,7 @@ public class Graph1 {
                 new String[]{"OK"},
                 null    );
         }else{JOptionPane.showOptionDialog(null,
-            "No, there is no direct path or intermediate hop from\n"+start+" to "+end+".",
+            "No, there is no path between\n"+start+" to "+end+".",
             "Message",
             JOptionPane.DEFAULT_OPTION,
             JOptionPane.INFORMATION_MESSAGE,
